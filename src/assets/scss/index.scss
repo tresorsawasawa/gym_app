@@ -1,5 +1,3 @@
-body {
-  background-color: #0e110e;
-  color: #fff;
-}
-
+@import './base/default';
+@import './components/Hero';
+@import './components/Header';
