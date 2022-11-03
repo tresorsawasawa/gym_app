@@ -10,7 +10,9 @@
           "apply",
           "variants",
           "responsive",
-          "screen"
+          "screen",
+          "mixin",
+          "include"
         ]
       }
     ],
@@ -22,18 +24,13 @@
           "apply",
           "variants",
           "responsive",
-          "screen"
+          "screen",
+          "mixin",
+          "include"
         ]
       }
     ],
     "csstree/validator": true
   },
-  "ignoreFiles": [
-    "build/**",
-    "dist/**",
-    "**/reset*.css",
-    "**/bootstrap*.css",
-    "**/*.js",
-    "**/*.jsx"
-  ]
+  "ignoreFiles": ["build/**", "dist/**", "**/reset*.css", "**/bootstrap*.css"]
 }
