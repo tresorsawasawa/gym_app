@@ -1,6 +1,8 @@
+import Hero from './components/Hero';
+
 const App = () => (
   <div className="App">
-    <h1>Hello from the app</h1>
+    <Hero />
   </div>
 );
 
