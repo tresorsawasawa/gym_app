@@ -99,7 +99,7 @@
     position: relative;
     background-color: $orange;
     width: 25%;
-    height: 122vh;
+    min-height: 100vh;
 
     & > .btn {
       position: absolute;
