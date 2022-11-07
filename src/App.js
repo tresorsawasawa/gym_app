@@ -1,13 +1,15 @@
 import Hero from './components/Hero';
+import Plans from './components/Plans';
 import Programs from './components/Programs';
 import Reasons from './components/Reasons';
 
 const App = () => (
-  <div className="App">
+  <main className="App">
     <Hero />
     <Programs />
     <Reasons />
-  </div>
+    <Plans />
+  </main>
 );
 
 export default App;

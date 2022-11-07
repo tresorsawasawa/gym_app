@@ -3,7 +3,7 @@ import programsData from '../data/programsData';
 import RightArrow from '../assets/images/rightArrow.png';
 
 const Programs = () => (
-  <div id="Programs" className="Programs">
+  <section id="Programs" className="Programs">
     <h2 className="Programs-header">
       <span className="stroke-text">Explore Our</span>
       {' '}
@@ -27,7 +27,7 @@ const Programs = () => (
         </li>
       ))}
     </ul>
-  </div>
+  </section>
 );
 
 export default Programs;

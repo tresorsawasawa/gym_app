@@ -6,7 +6,7 @@ import Heart from '../assets/images/heart.png';
 import Calories from '../assets/images/calories.png';
 
 const Hero = () => (
-  <div className="hero-container">
+  <section className="hero-container">
     <div className="left-hero">
       <Header />
 
@@ -80,7 +80,7 @@ const Hero = () => (
         </div>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Hero;

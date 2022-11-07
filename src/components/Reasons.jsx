@@ -9,7 +9,7 @@ import adidas from '../assets/images/adidas.png';
 import nike from '../assets/images/nike.png';
 
 const Reasons = () => (
-  <div id="reasons" className="reasons">
+  <section id="reasons" className="reasons">
     <div className="left-reasons">
       <img src={image1} alt="image1" />
       <img src={image2} alt="image2" />
@@ -55,7 +55,7 @@ const Reasons = () => (
         </ul>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Reasons;
