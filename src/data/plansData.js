@@ -1,9 +1,10 @@
 const plansData = [
   {
+    id: 1,
     icon: (
       <svg
-        width="15"
-        height="13"
+        width="32"
+        height="30"
         viewBox="0 0 15 13"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -19,10 +20,11 @@ const plansData = [
     ],
   },
   {
+    id: 2,
     icon: (
       <svg
-        width="28"
-        height="24"
+        width="32"
+        height="30"
         viewBox="0 0 28 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -38,10 +40,11 @@ const plansData = [
     ],
   },
   {
+    id: 2,
     icon: (
       <svg
-        width="16"
-        height="15"
+        width="32"
+        height="30"
         viewBox="0 0 16 15"
         xmlns="http://www.w3.org/2000/svg"
       >
