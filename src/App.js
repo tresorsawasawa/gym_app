@@ -1,7 +1,21 @@
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+import Join from './components/Join';
+import Plans from './components/Plans';
+import Programs from './components/Programs';
+import Reasons from './components/Reasons';
+import Testimonials from './components/Testimonials';
+
 const App = () => (
-  <div className="App">
-    <h1>Hello from the app</h1>
-  </div>
+  <main className="App">
+    <Hero />
+    <Programs />
+    <Reasons />
+    <Plans />
+    <Testimonials />
+    <Join />
+    <Footer />
+  </main>
 );
 
 export default App;

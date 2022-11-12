@@ -1,0 +1,26 @@
+@import '../base/mixins';
+@import '../base/colors';
+
+.header {
+  @include flex-between(row);
+
+  width: 100%;
+
+  .logo {
+    // width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    @include flex-between(row);
+
+    gap: 2rem;
+    color: $white;
+
+    .nav-item:hover {
+      cursor: pointer;
+      color: $orange;
+    }
+  }
+}

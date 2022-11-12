@@ -1,0 +1,71 @@
+@import '../base/mixins';
+@import '../base/colors';
+
+.join {
+  @include flex-between(row);
+
+  padding: 0 2rem;
+
+  .left-j {
+    position: relative;
+    color: $white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10.5rem;
+      border-radius: 20%;
+      background-color: $orange;
+      padding: 2px;
+      margin: -10px 0;
+    }
+
+    & > div {
+      gap: 1rem;
+      display: flex;
+    }
+  }
+
+  .right-j {
+    // @include flex-center-end(row);
+    display: flex;
+
+    .email-container {
+      @include flex-row;
+
+      gap: 3rem;
+      background-color: gray;
+      padding: 1rem 2rem;
+
+      .input_email {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: $lightgray;
+
+        &::placeholder {
+          color: $lightgray;
+        }
+      }
+
+      .btn-j {
+        background-color: $orange;
+        color: $white;
+
+        &:hover {
+          transform: scale(1.15);
+          transition: 0.7s all ease-in-out;
+          background: $planCard;
+        }
+
+        &:focus {
+          transition: 0.7s all ease-in-out;
+          background: $darkOrange;
+        }
+      }
+    }
+  }
+}

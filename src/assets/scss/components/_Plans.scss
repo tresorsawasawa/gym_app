@@ -1,0 +1,107 @@
+@import '../base/mixins';
+@import '../base/colors';
+
+.plans {
+  @include flex-column;
+
+  position: relative;
+  margin-top: -5rem;
+  padding: 0 2rem;
+  gap: 2rem;
+
+  .plans-blur-1 {
+    @include blur_orange;
+
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    left: 0;
+  }
+
+  .plans-blur-2 {
+    @include blur_orange;
+
+    width: 32rem;
+    height: 23rem;
+    top: 1rem;
+    right: 0;
+  }
+
+  &-header-container {
+    .heading {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: $white;
+      text-align: center;
+    }
+  }
+
+  .plans-content {
+    @include flex-center(row);
+
+    gap: 2rem;
+
+    .plan {
+      @include flex-center-start(column);
+
+      gap: 1rem;
+      background-color: $caloryCard;
+      color: $white;
+      padding: 1rem;
+      width: 15.5rem;
+
+      button {
+        width: 100%;
+      }
+
+      & > svg { fill: $orange; }
+
+      &:nth-child(2) {
+        background: $planCard;
+        transform: scale(1.1);
+
+        & > svg {
+          fill: $white;
+        }
+
+        button { color: $orange; }
+      }
+
+      & > :nth-child(2) {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      & > :nth-child(3) {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      & > :nth-child(4) {
+        font-size: 0.8rem;
+
+        .feature-item {
+          @include flex-center-start(row);
+
+          gap: 0.3rem;
+          margin-bottom: 0.3rem;
+
+          & img {
+            width: 1.1rem;
+            height: 1.1rem;
+          }
+        }
+      }
+
+      .see-more {
+        @include flex-center(row);
+
+        gap: 0.2rem;
+
+        & > :nth-child(2) {
+          @include flex-center(row);
+        }
+      }
+    }
+  }
+}
