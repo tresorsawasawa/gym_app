@@ -26,6 +26,8 @@ const Footer = () => (
         </li>
       </ul>
     </div>
+    <div className="footer-blur-1" />
+    <div className="footer-blur-2" />
   </footer>
 );
 
