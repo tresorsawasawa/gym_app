@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Join from './components/Join';
 import Plans from './components/Plans';
@@ -13,6 +14,7 @@ const App = () => (
     <Plans />
     <Testimonials />
     <Join />
+    <Footer />
   </main>
 );
 
