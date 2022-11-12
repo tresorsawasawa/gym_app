@@ -1,0 +1,50 @@
+@import '../base/mixins';
+@import '../base/colors';
+
+.footer {
+  position: relative;
+
+  .horizontal {
+    border: 1px solid $lightgray;
+  }
+
+  .row {
+    @include flex-center(row);
+    padding: 4rem 2rem;
+    gap: 5rem;
+
+    .logo_footer {
+      width: 10rem;
+
+      a {
+        img {
+          width: 100%;
+
+          &:hover {
+            transition: 0.3s all ease-in-out;
+            transform: scale(1.15);
+          }
+        }
+      }
+    }
+
+    .footer_icons {
+      @include flex-row;
+      gap: 1rem;
+
+      .icon-item {
+        a {
+          img {
+            height: 1.6rem;
+            width: 1.6rem;
+
+            &:hover {
+              transition: 0.4s all ease-in-out;
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
