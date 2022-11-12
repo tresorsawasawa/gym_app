@@ -2,8 +2,15 @@
 
 .hero-container {
   @include flex-between-start(row);
-
+  position: relative;
   width: 100%;
+
+  .hero-blur {
+    @include blur_orange;
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+  }
 
   .left-hero {
     @include flex-start(column);

@@ -47,4 +47,25 @@
       }
     }
   }
+
+  .footer-blur-1 {
+    @include blur_orange;
+    bottom: 0;
+    right: 15%;
+    width: 26rem;
+    height: 6rem;
+    filter: blur(200px);
+    background: red;
+  }
+
+  .footer-blur-2 {
+    @include blur_orange;
+    bottom: 0;
+    left: 15%;
+    width: 26rem;
+    height: 6rem;
+    filter: blur(200px);
+    background: rgb(255, 115, 0);
+  }
+  
 }

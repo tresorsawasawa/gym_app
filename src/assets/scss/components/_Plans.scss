@@ -3,9 +3,26 @@
 
 .plans {
   @include flex-column;
+  position: relative;
   margin-top: -5rem;
   padding: 0 2rem;
   gap: 2rem;
+
+  .plans-blur-1 {
+    @include blur_orange;
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    left: 0;
+  }
+
+  .plans-blur-2 {
+    @include blur_orange;
+    width: 32rem;
+    height: 23rem;
+    top: 1rem;
+    right: 0;
+  }
 
   &-header-container {
     .heading {
