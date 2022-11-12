@@ -1,0 +1,90 @@
+@import '../base/mixins';
+@import '../base/colors';
+
+.testimonials {
+  padding: 0 2rem;
+  gap: 1rem;
+  display: flex;
+
+  .left-t {
+    @include flex-column;
+    flex: 1 1;
+    text-transform: uppercase;
+    gap: 2rem;
+    color: $white;
+
+    & > :nth-child(1) {
+      color: $orange;
+      font-weight: bold;
+    }
+
+    & > :nth-child(2),
+    & > :nth-child(3) {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    & > :nth-child(4) {
+      text-transform: none;
+      text-align: justify;
+      line-height: 40px;
+      letter-spacing: 2px;
+    }
+
+    .name-status {
+      .name {
+        color: $orange;
+      }
+    }
+  }
+
+  .right-t {
+    position: relative;
+    flex: 1;
+
+    .border {
+      position: absolute;
+      width: 17rem;
+      height: 20rem;
+      border: 2px solid $orange;
+      background-color: transparent;
+      right: 9rem;
+      top: 0.9rem;
+    }
+
+    .background {
+      position: absolute;
+      width: 17rem;
+      height: 19rem;
+      top: 4rem;
+      right: 7rem;
+      background: $planCard;
+    }
+
+    .reviewer_image {
+      position: absolute;
+      width: 17rem;
+      height: 20rem;
+      object-fit: cover;
+      right: 8rem;
+      top: 2rem;
+    }
+
+    .arrows {
+      position: absolute;
+      display: flex;
+      gap: 0.5rem;
+      bottom: 1rem;
+      left: 1rem;
+
+      .arrow {
+        width: 1.5rem;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
