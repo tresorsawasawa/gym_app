@@ -8,6 +8,7 @@
 
   .left-t {
     @include flex-column;
+
     flex: 1 1;
     text-transform: uppercase;
     gap: 2rem;

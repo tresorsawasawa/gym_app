@@ -3,6 +3,7 @@
 
 .join {
   @include flex-between(row);
+
   padding: 0 2rem;
 
   .left-j {
@@ -12,7 +13,7 @@
     font-weight: bold;
     text-transform: uppercase;
 
-    &:before {
+    &::before {
       content: '';
       position: absolute;
       width: 10.5rem;
@@ -34,6 +35,7 @@
 
     .email-container {
       @include flex-row;
+
       gap: 3rem;
       background-color: gray;
       padding: 1rem 2rem;
