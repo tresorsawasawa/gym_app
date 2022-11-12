@@ -40,7 +40,7 @@ const plansData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     icon: (
       <svg
         width="32"
