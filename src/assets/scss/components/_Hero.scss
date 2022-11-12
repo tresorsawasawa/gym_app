@@ -167,9 +167,9 @@
       border-radius: 5px;
       width: fit-content;
       position: absolute;
-      top: 30rem;
+      top: 27rem;
       right: 24rem;
-      padding: 0.9rem;
+      padding: 0.5rem;
 
       .calories_img {
         width: 3rem;
@@ -177,6 +177,8 @@
 
       .calories_text {
         @include flex-between(column);
+
+        width: 50%;
 
         &:nth-child(1) {
           color: $gray;
