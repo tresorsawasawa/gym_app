@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import GitHub from '../assets/images/github.png';
 import Instagram from '../assets/images/instagram.png';
 import Linkedin from '../assets/images/linkedin.png';
@@ -9,9 +10,9 @@ const Footer = () => (
     <hr className="horizontal" />
     <div className="row">
       <div className="logo_footer">
-        <a href="https://github.com">
+        <Link to="hero" span smooth>
           <img src={Logo} alt="Logo" />
-        </a>
+        </Link>
       </div>
 
       <ul className="footer_icons">

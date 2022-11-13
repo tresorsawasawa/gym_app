@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
+import NumberCounter from 'number-counter';
 import Header from './Header';
 import HeroImage from '../assets/images/hero_image.png';
 import HeroImageBack from '../assets/images/hero_image_back.png';
@@ -15,7 +17,7 @@ const Hero = () => {
   const mobile = window.innerWidth <= 992;
 
   return (
-    <section className="hero-container">
+    <section id="hero" className="hero-container">
       <div className="bur hero-blur" />
       <div className="left-hero">
         <Header />
@@ -50,17 +52,23 @@ const Hero = () => {
 
         <div className="figures">
           <div className="block-fig fig-1">
-            <span>+140</span>
+            <span>
+              <NumberCounter start={100} end={140} preFix="+" delay="4" />
+            </span>
             <span>expert coaches</span>
           </div>
 
           <div className="block-fig fig-2">
-            <span>+978</span>
+            <span>
+              <NumberCounter start={900} end={978} preFix="+" delay="4" />
+            </span>
             <span>members joined</span>
           </div>
 
           <div className="block-fig fig-3">
-            <span>+50</span>
+            <span>
+              <NumberCounter start={10} end={50} preFix="+" delay="4" />
+            </span>
             <span>fitness programs</span>
           </div>
         </div>
@@ -76,7 +84,9 @@ const Hero = () => {
       </div>
       <div className="right-hero">
         <button type="button" className="btn">
-          Join Now
+          <Link to="join-us" span smooth>
+            Join Now
+          </Link>
         </button>
 
         <motion.div
