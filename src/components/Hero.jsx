@@ -12,6 +12,8 @@ const Hero = () => {
     duration: 3,
   };
 
+  const mobile = window.innerWidth <= 992;
+
   return (
     <section className="hero-container">
       <div className="bur hero-blur" />
@@ -20,7 +22,7 @@ const Hero = () => {
 
         <div className="the-best-ad">
           <motion.div
-            initial={{ left: '283px' }}
+            initial={{ left: mobile ? '178px' : '238px' }}
             whileInView={{ left: '8px' }}
             transition={{ ...transition, type: 'tween' }}
             className="background"
@@ -79,7 +81,7 @@ const Hero = () => {
 
         <motion.div
           initial={{ right: '-1rem' }}
-          whileInView={{ left: '4rem' }}
+          whileInView={{ left: '3rem' }}
           transition={transition}
           className="heart-rate"
         >

@@ -87,6 +87,21 @@
       }
     }
 
+    .figures {
+      @include flex-center(row);
+
+      .block-fig {
+        & > span:nth-child(1) {
+          font-size: large;
+        }
+
+        & > span:nth-child(2) {
+          font-size: smaller;
+          text-align: center;
+        }
+      }
+    }
+
     .hero-buttons {
       display: flex;
       gap: 1rem;
@@ -167,7 +182,7 @@
       border-radius: 5px;
       width: fit-content;
       position: absolute;
-      top: 27rem;
+      top: 33rem;
       right: 24rem;
       padding: 0.5rem;
 
@@ -178,16 +193,110 @@
       .calories_text {
         @include flex-between(column);
 
-        width: 50%;
+        // width: 50%;
 
-        &:nth-child(1) {
+        &>:nth-child(1) {
           color: $gray;
         }
 
-        &:nth-child(2) {
+        &>:nth-child(2) {
           color: $white;
-          // font-size: 1.5rem;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-container {
+    @include flex-between-start(column);
+
+    .hero-blur {
+      width: 14rem;
+    }
+
+    .left-hero {
+      width: 100%;
+      gap: 1.7rem;
+
+      .the-best-ad {
+        margin-top: 1rem;
+        font: small;
+        align-self: center;
+        transform: scale(0.9);
+
+        span {
+          text-align: center;
+        }
+      }
+
+      .hero-text {
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+
+        .text-description {
+          font-size: small;
+          font-weight: 200;
+          width: 80%;
+          text-align: center;
+          letter-spacing: 1px;
+        }
+      }
+
+      .hero-buttons {
+        @include flex-center(row);
+        width: 100%;
+      }
+    }
+
+    .right-hero {
+      position: relative;
+      background: none;
+      width: 100%;
+
+      & > .btn {
+        right: 3.4rem;
+      }
+
+      .heart-rate {
+        top: 2rem;
+        left: 1rem;
+      }
+
+      .hero_image {
+        position: relative;
+        width: 14rem;
+        height: 20rem;
+        top: 4.5rem;
+        left: 7rem;
+        align-self: center;
+      }
+  
+      .hero_image_back {
+        width: 15rem;
+        top: 0;
+        left: 2rem;
+      }
+
+      .calories {
+        position: relative;
+        top: 5rem;
+        left: 2rem;
+       
+          .calories_img {
+            width: 2rem;
+          }
+
+          .calories_text {
+            &>:nth-child(1) {
+              font-size: small;
+            }
+
+            &:nth-child(2) {
+              font-size: 1rem;
+            }
+          }
       }
     }
   }
