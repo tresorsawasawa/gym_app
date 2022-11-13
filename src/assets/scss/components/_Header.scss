@@ -17,7 +17,7 @@
       padding: 0.5rem;
       border-radius: 5px;
       cursor: pointer;
-      
+
       img {
         display: none;
       }
@@ -25,17 +25,16 @@
 
     .nav-list {
       @include flex-between(row);
-  
+
       gap: 2rem;
       color: $white;
-  
+
       .nav-item:hover {
         cursor: pointer;
         color: $orange;
       }
     }
   }
-
 }
 
 @media screen and (max-width: 992px) {
@@ -50,22 +49,22 @@
       display: none;
     }
 
-  .navbar {
-    .hamburger-container {
-      img {
-        display: block;
+    .navbar {
+      .hamburger-container {
+        img {
+          display: block;
+        }
+      }
+
+      .nav-list {
+        @include flex-column;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $appColor;
+        padding: 2rem;
       }
     }
-
-    .nav-list {
-      @include flex-column;
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      background-color: $appColor;
-      padding: 2rem;
-    }
-  }
   }
 }
