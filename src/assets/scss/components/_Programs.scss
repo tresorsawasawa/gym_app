@@ -78,9 +78,9 @@
 
 @media screen and (max-width: 992px) {
   .Programs {
-
     &-header {
       @include flex-center(column);
+
       font-size: x-large;
     }
 

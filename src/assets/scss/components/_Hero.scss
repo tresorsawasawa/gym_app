@@ -206,7 +206,7 @@
 
       .the-best-ad {
         margin-top: 1rem;
-        font: small;
+        font-size: small;
         align-self: center;
         transform: scale(0.9);
 
@@ -231,11 +231,13 @@
 
       .hero-buttons {
         @include flex-center(row);
+
         width: 100%;
       }
 
       .figures {
         @include flex-center(row);
+
         width: 100%;
 
         .block-fig {
@@ -253,6 +255,7 @@
 
     .right-hero {
       @include flex-center(column);
+
       position: relative;
       background: none;
       width: 100%;
