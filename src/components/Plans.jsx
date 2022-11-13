@@ -5,7 +5,7 @@ import PlansData from '../data/plansData';
 import WhiteTick from '../assets/images/whiteTick.png';
 
 const Plans = () => (
-  <section className="plans">
+  <section id="plans" className="plans">
     <div className="plans-blur-1" />
     <div className="plans-blur-2" />
     <div className="plans-header-container">

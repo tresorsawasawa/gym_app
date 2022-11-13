@@ -7,20 +7,64 @@
   width: 100%;
 
   .logo {
-    // width: 10rem;
     height: 3rem;
     cursor: pointer;
   }
 
-  .nav-list {
-    @include flex-between(row);
-
-    gap: 2rem;
-    color: $white;
-
-    .nav-item:hover {
+  .navbar {
+    .hamburger-container {
+      background-color: $appColor;
+      padding: 0.5rem;
+      border-radius: 5px;
       cursor: pointer;
-      color: $orange;
+
+      img {
+        display: none;
+      }
+    }
+
+    .nav-list {
+      @include flex-between(row);
+
+      gap: 2rem;
+      color: $white;
+
+      .nav-item:hover {
+        cursor: pointer;
+        color: $orange;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    padding: 0 1rem;
+
+    .logo {
+      display: none;
+    }
+
+    .navbar {
+      .hamburger-container {
+        img {
+          display: block;
+        }
+      }
+
+      .nav-list {
+        @include flex-column;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $appColor;
+        padding: 2rem;
+      }
     }
   }
 }

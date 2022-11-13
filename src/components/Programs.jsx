@@ -3,7 +3,7 @@ import programsData from '../data/programsData';
 import RightArrow from '../assets/images/rightArrow.png';
 
 const Programs = () => (
-  <section id="Programs" className="Programs">
+  <section id="programs" className="Programs">
     <h2 className="Programs-header">
       <span className="stroke-text">Explore Our</span>
       {' '}

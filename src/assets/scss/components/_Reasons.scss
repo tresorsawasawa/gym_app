@@ -2,7 +2,7 @@
 @import '../base/colors';
 
 .reasons {
-  padding: 0.2rem;
+  padding: 0 2rem;
   display: flex;
   gap: 2rem;
 
@@ -92,7 +92,84 @@
         gap: 1rem;
         margin-top: 0.7rem;
 
-        & li img { width: 2.5rem; }
+        & li img {
+          width: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .reasons {
+    @include flex-center(column-reverse);
+
+    .left-reasons {
+      // width: 70%;
+      grid-auto-rows: auto;
+      overflow: hidden;
+      justify-self: center;
+      align-self: center;
+
+      & > :nth-child(1) {
+        width: 10rem;
+        height: 22rem;
+      }
+
+      & > :nth-child(2) {
+        width: 19.5rem;
+        height: 10rem;
+      }
+
+      & > :nth-child(3) {
+        width: 9rem;
+        height: 11rem;
+      }
+
+      & > :nth-child(4) {
+        width: 9rem;
+        height: 11rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 623px) {
+  .reasons {
+    flex-direction: column-reverse;
+
+    .left-reasons {
+      grid-auto-rows: auto;
+      overflow: hidden;
+      justify-content: center;
+      gap: 0.6rem;
+
+      & > :nth-child(1) {
+        width: 7rem;
+        height: 17rem;
+      }
+
+      & > :nth-child(2) {
+        width: 15rem;
+        height: 10rem;
+      }
+
+      & > :nth-child(3) {
+        height: 6rem;
+        width: 7rem;
+      }
+
+      & > :nth-child(4) {
+        width: 7rem;
+        height: 6rem;
+      }
+    }
+
+    .right-reasons {
+      .text_container {
+        color: $white;
+        font-size: x-large;
+        font-weight: bold;
       }
     }
   }
