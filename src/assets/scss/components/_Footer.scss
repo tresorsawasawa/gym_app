@@ -72,3 +72,13 @@
     background: rgb(255, 115, 0);
   }
 }
+
+@media screen and (max-width: 992px) {
+  .footer {
+    .row {
+      @include flex-center(column-reverse);
+
+      gap: 2rem;
+    }
+  }
+}
