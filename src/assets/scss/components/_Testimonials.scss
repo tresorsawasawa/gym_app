@@ -49,7 +49,7 @@
       height: 20rem;
       border: 2px solid $orange;
       background-color: transparent;
-      right: 9rem;
+      right: 7rem;
       top: 0.9rem;
     }
 
@@ -58,7 +58,7 @@
       width: 17rem;
       height: 19rem;
       top: 4rem;
-      right: 7rem;
+      right: 5rem;
       background: $planCard;
     }
 
@@ -67,7 +67,7 @@
       width: 17rem;
       height: 20rem;
       object-fit: cover;
-      right: 8rem;
+      right: 6rem;
       top: 2rem;
     }
 
@@ -75,7 +75,7 @@
       position: absolute;
       display: flex;
       gap: 0.5rem;
-      bottom: 1rem;
+      bottom: 0;
       left: 1rem;
 
       .arrow {
@@ -85,6 +85,48 @@
           cursor: pointer;
           transform: scale(1.1);
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .testimonials {
+    @include flex-column;
+
+    .left-t {
+      gap: 1rem;
+
+      & > :nth-child(2),
+      & > :nth-child(3) {
+        font-size: xx-large;
+      }
+    }
+
+    .right-t {
+      @include flex-center(column);
+
+      .border {
+        position: absolute;
+      }
+
+      .border,
+      .background {
+        display: none;
+      }
+
+      .reviewer_image {
+        position: relative;
+        top: 0;
+        right: 0;
+        align-self: center;
+      }
+
+      .arrows {
+        position: relative;
+        gap: 1.6rem;
+        top: 1rem;
+        align-self: center;
       }
     }
   }
