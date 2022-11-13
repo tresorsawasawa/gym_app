@@ -54,7 +54,9 @@
         width: 100%;
       }
 
-      & > svg { fill: $orange; }
+      & > svg {
+        fill: $orange;
+      }
 
       &:nth-child(2) {
         background: $planCard;
@@ -64,7 +66,9 @@
           fill: $white;
         }
 
-        button { color: $orange; }
+        button {
+          color: $orange;
+        }
       }
 
       & > :nth-child(2) {
@@ -100,6 +104,29 @@
 
         & > :nth-child(2) {
           @include flex-center(row);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .plans {
+    margin-top: -3rem;
+
+    &-header-container {
+      .heading {
+        font-size: x-large;
+      }
+    }
+
+    .plans-content {
+      @include flex-center(column);
+
+      .plan {
+        &:nth-child(2) {
+          transform: none;
+
         }
       }
     }
