@@ -87,21 +87,6 @@
       }
     }
 
-    .figures {
-      @include flex-center(row);
-
-      .block-fig {
-        & > span:nth-child(1) {
-          font-size: large;
-        }
-
-        & > span:nth-child(2) {
-          font-size: smaller;
-          text-align: center;
-        }
-      }
-    }
-
     .hero-buttons {
       display: flex;
       gap: 1rem;
@@ -195,11 +180,11 @@
 
         // width: 50%;
 
-        &>:nth-child(1) {
+        & > :nth-child(1) {
           color: $gray;
         }
 
-        &>:nth-child(2) {
+        & > :nth-child(2) {
           color: $white;
         }
       }
@@ -248,9 +233,26 @@
         @include flex-center(row);
         width: 100%;
       }
+
+      .figures {
+        @include flex-center(row);
+        width: 100%;
+
+        .block-fig {
+          & > span:nth-child(1) {
+            font-size: large;
+          }
+
+          & > span:nth-child(2) {
+            font-size: smaller;
+            text-align: center;
+          }
+        }
+      }
     }
 
     .right-hero {
+      @include flex-center(column);
       position: relative;
       background: none;
       width: 100%;
@@ -269,10 +271,10 @@
         width: 14rem;
         height: 20rem;
         top: 4.5rem;
-        left: 7rem;
+        left: 6rem;
         align-self: center;
       }
-  
+
       .hero_image_back {
         width: 15rem;
         top: 0;
@@ -283,20 +285,20 @@
         position: relative;
         top: 5rem;
         left: 2rem;
-       
-          .calories_img {
-            width: 2rem;
+
+        .calories_img {
+          width: 2rem;
+        }
+
+        .calories_text {
+          & > :nth-child(1) {
+            font-size: small;
           }
 
-          .calories_text {
-            &>:nth-child(1) {
-              font-size: small;
-            }
-
-            &:nth-child(2) {
-              font-size: 1rem;
-            }
+          &:nth-child(2) {
+            font-size: 1rem;
           }
+        }
       }
     }
   }
